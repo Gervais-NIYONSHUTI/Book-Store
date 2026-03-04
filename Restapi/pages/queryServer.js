@@ -1,8 +1,8 @@
 import http from 'node:http'
-import { getDataFromDB } from './database/db.js'
-import { sendJSONResponse } from './utils/sendJSONResponse.js'
-import { getDataByPathParams } from './utils/getDataByPathParams.js'
-import { getDataByQueryParams } from './utils/getDataByQueryParams.js'
+import { getDataFromDB } from '../database/db.js'
+import { sendJSONResponse } from '../utils/sendJSONResponse.js'
+import { getDataByPathParams } from '../utils/getDataByPathParams.js'
+import { getDataByQueryParams } from '../utils/getDataByQueryParams.js'
 
 const PORT = 8000
 
