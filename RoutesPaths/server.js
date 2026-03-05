@@ -1,17 +1,20 @@
 import path from 'node:path'
 import http from 'node:http'
+import fs from 'node:fs/promises'
 
 const PORT = 8000
 
 const __dirname = import.meta.dirname
 
-const server = http.createServer((req, res) => {
+const server = http.createServer(async (req, res) => {
 
   const pathToResource = path.join(__dirname, 'public', 'index.html')
 
+  const content = await fs.readFileSync(pathToResource)
+
   res.statusCode = 200
   res.setHeader('Content-Type', 'text/html')
-  res.end()
+  res.end(content)
 
 })
 
