@@ -5,7 +5,7 @@
   "license": "ISC",
   "author": "Gervais NIYONSHUTI",
   "type": "module",
-  "main": "server.js",
+  "main": "./RoutesPaths/server.js",
   "scripts": {
     "start": "node ./RoutesPaths/server.js"
   }
