@@ -9,7 +9,7 @@ export async function addNewSighting(newSighting) {
     const sightings = await getData()
     sightings.push(newSighting)
     
-    const pathJSON = path.join('data', 'data.json')
+    const pathJSON = path.join('./RoutesPaths/data', 'data.json')
     
     await fs.writeFile(
       pathJSON,

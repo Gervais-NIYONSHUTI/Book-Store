@@ -8,5 +8,8 @@
   "main": "./RoutesPaths/server.js",
   "scripts": {
     "start": "node ./RoutesPaths/server.js"
+  },
+  "dependencies": {
+    "sanitize-html": "^2.17.1"
   }
 }
