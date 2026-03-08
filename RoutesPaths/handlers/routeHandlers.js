@@ -7,7 +7,7 @@ export async function handleGet(res) {
   const data = await getData()
   const content = JSON.stringify(data)
   sendResponse(res, 200, 'application/json', content)
-}  
+}
 
 export async function handlePost(req, res) {
   try {
@@ -17,4 +17,5 @@ export async function handlePost(req, res) {
   } catch (err) {
     sendResponse(res, 400, 'application/json', JSON.stringify({error: err}))
   }
-} 
+
+}
