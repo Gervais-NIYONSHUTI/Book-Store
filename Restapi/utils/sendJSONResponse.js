@@ -1,0 +1,9 @@
+
+
+export const sendJSONResponse = (res, statusCode, payLoad) => {
+    res.setHeader("Content-Type", "application/json")
+    res.setHeader("Access-Control-Allow-Origin", "*")
+    res.setHeader("Access-Control-Allow-Modules", "GET")
+    res.statusCode = statusCode
+    res.end(JSON.stringify(payLoad));
+}

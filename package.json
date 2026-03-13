@@ -1,0 +1,18 @@
+{
+  "name": "nature",
+  "version": "1.0.0",
+  "description": "Explore the beaty of nature",
+  "license": "ISC",
+  "author": "Gervais NIYONSHUTI",
+  "type": "module",
+  "main": "./RoutesPaths/server.js",
+  "scripts": {
+    "start": "nodemon ./RoutesPaths/server.js"
+  },
+  "dependencies": {
+    "sanitize-html": "^2.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
